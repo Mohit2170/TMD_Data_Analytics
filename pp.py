@@ -16,8 +16,8 @@ y=dataset.iloc[:,68].values
 #mising data
 from sklearn.preprocessing import Imputer
 imp=Imputer(missing_values='NaN',strategy='mean',axis=0)
-imp=imp.fit(x[:,0:67])
-x[:,0:67] = imp.transform(x[:,0:67]) 
+imp=imp.fit(x[:,0:68])
+x[:,0:68] = imp.transform(x[:,0:68]) 
 
 #catagorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
